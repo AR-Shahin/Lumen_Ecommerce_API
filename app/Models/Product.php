@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
@@ -17,4 +18,13 @@ class Product extends Model
         'category_id','image'
 
     ];
+
+    public function setNameAttribute($value)
+    {
+        $this->attributes['name'] = ucwords($value);
+    }
+    public function setSlugAttribute($value)
+    {
+        $this->attributes['slug'] = Str::slug($value, '-');
+    }
 }
