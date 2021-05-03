@@ -4,8 +4,51 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "43c773439aa4b4557808785e43c8445b",
+    "content-hash": "c71e33f56871cf2c3513e44b88bb88b7",
     "packages": [
+        {
+            "name": "adamtyn/lumen-artisan-make-model",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AdamTyn/lumen-artisan-make-model.git",
+                "reference": "4fbac3351abf92494ae7c82c7cd1e6ad8aa69526"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AdamTyn/lumen-artisan-make-model/zipball/4fbac3351abf92494ae7c82c7cd1e6ad8aa69526",
+                "reference": "4fbac3351abf92494ae7c82c7cd1e6ad8aa69526",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "AdamTyn\\Lumen\\Artisan\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "AdamTyn",
+                    "email": "tynadam@foxmail.com"
+                }
+            ],
+            "description": "移植Laravel的 `php artisan make:model` [快速创建模型] 指令到Lumen",
+            "keywords": [
+                "adamtyn",
+                "framework",
+                "laravel",
+                "lumen"
+            ],
+            "support": {
+                "issues": "https://github.com/AdamTyn/lumen-artisan-make-model/issues",
+                "source": "https://github.com/AdamTyn/lumen-artisan-make-model/tree/v1.0.1"
+            },
+            "time": "2020-09-27T06:55:37+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.9.2",
@@ -1961,6 +2004,62 @@
             "time": "2021-02-09T16:42:36+00:00"
         },
         {
+            "name": "mmghv/lumen-route-binding",
+            "version": "1.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mmghv/lumen-route-binding.git",
+                "reference": "141c56f7def1fbe4278dcf214f56ebbae000569d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mmghv/lumen-route-binding/zipball/141c56f7def1fbe4278dcf214f56ebbae000569d",
+                "reference": "141c56f7def1fbe4278dcf214f56ebbae000569d",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/lumen-framework": "5 - 8",
+                "nikic/fast-route": ">=0.4 <2.0",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "mockery/mockery": "~1.0",
+                "phpunit/phpunit": "~7.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "mmghv\\LumenRouteBinding\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mohamed Gharib",
+                    "email": "mmghv@coddest.com"
+                }
+            ],
+            "description": "Route model binding for Lumen",
+            "homepage": "https://github.com/mmghv/lumen-route-binding",
+            "keywords": [
+                "bind",
+                "binding",
+                "fast-route",
+                "lumen",
+                "model",
+                "route",
+                "route model binding"
+            ],
+            "support": {
+                "issues": "https://github.com/mmghv/lumen-route-binding/issues",
+                "source": "https://github.com/mmghv/lumen-route-binding/tree/1.5.2"
+            },
+            "time": "2020-10-24T16:20:56+00:00"
+        },
+        {
             "name": "monolog/monolog",
             "version": "2.2.0",
             "source": {
@@ -2263,6 +2362,57 @@
                 "source": "https://github.com/opis/closure/tree/3.6.2"
             },
             "time": "2021-04-09T13:42:10+00:00"
+        },
+        {
+            "name": "pearl/lumen-request-validate",
+            "version": "1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pearlkrishn/lumen-request-validate.git",
+                "reference": "4fce780fb8e9924ddb5c285e47bb62166365d924"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pearlkrishn/lumen-request-validate/zipball/4fce780fb8e9924ddb5c285e47bb62166365d924",
+                "reference": "4fce780fb8e9924ddb5c285e47bb62166365d924",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.7.* || 5.8.* || 6.* || 7.* || 8.*",
+                "laravel/lumen-framework": "5.7.* || 5.8.* || 6.* || 7.* || 8.*",
+                "php": ">=7.1.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Pearl\\RequestValidate\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "pearlkrishn",
+                    "email": "pearlkrishn@gmail.com"
+                }
+            ],
+            "description": "Lumen doesn't have form request validator seperatly. This package helps developers to segregate the validation layer from the controller to a separate dedicated class",
+            "keywords": [
+                "form-request",
+                "form-request-validation",
+                "form-validation",
+                "lumen",
+                "lumen-package",
+                "lumen-request-validate",
+                "validation"
+            ],
+            "support": {
+                "issues": "https://github.com/pearlkrishn/lumen-request-validate/issues",
+                "source": "https://github.com/pearlkrishn/lumen-request-validate/tree/1.6"
+            },
+            "time": "2020-10-01T17:06:28+00:00"
         },
         {
             "name": "phpoption/phpoption",

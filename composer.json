@@ -6,8 +6,10 @@
     "type": "project",
     "require": {
         "php": "^7.3|^8.0",
+        "adamtyn/lumen-artisan-make-model": "^1.0",
         "illuminate/console": "^8.40",
-        "laravel/lumen-framework": "^8.0"
+        "laravel/lumen-framework": "^8.0",
+        "pearl/lumen-request-validate": "^1.6"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",

@@ -17,6 +17,10 @@ class Category extends Model
         'name', 'slug'
     ];
 
+    public function setNameAttribute($value)
+    {
+        $this->attributes['name'] = ucwords($value);
+    }
     public function setSlugAttribute($value){
         $this->attributes['slug'] = Str::slug($value, '-');
     }
